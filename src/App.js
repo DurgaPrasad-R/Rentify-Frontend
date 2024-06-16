@@ -4,9 +4,9 @@ import PropertyCard from "./components/PropertyCard";
 import HouseCard from "./components/HouseCard";
 function App() {
   return (
-    <div className="App">
+    <div className="App font-poppins">
       <Header />
-      <HouseCard />
+      <PropertyCard />
     </div>
   );
 }
