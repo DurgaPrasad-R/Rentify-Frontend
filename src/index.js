@@ -2,33 +2,47 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Home from "./pages/Home";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "../src/pages/About"
+import Login from "../src/pages/Login"
+import Signup from "../src/pages/Signup"
+import Search from "../src/pages/Search"
 import ChatApp from "./pages/ChatApp";
 import PropertyCard from "./components/PropertyCard";
 import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
 import Temp from "./pages/Temp";
-
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
-    children: [{ index: true, element: <Home /> },{
-      path: "temp",
-      element: <Temp />,
+    path:"/",
+    element:<App/>,
+    children:[{index: true, element:<About/>},
+      {
+        path: "temp",
+        element: <Temp />,
+      },{
+        path: "property",
+        element: <PropertyCard />,
+      },
+      {
+        path: "chat",
+        element: <ChatApp/>
+      },
+      {
+      path:"/login",
+      element:<Login/>
     },{
-      path: "property",
-      element: <PropertyCard />,
-    },
-    {
-      path: "chat",
-      element: <ChatApp/>
-    }],
-  },
-]);
+      path:"/signup",
+      element:<Signup/>
+    },{
+      path:"/search",
+      element:<Search/>
+    }]
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
