@@ -791,7 +791,7 @@ const SellerForm = () => {
               </div>
             </div>
 
-            <div className="md:flex md:gap-2 md:justify-between">
+            <div className="md:flex md:gap-2 md:justify-between items-end">
               <div className="p-2 w-full md:w-[30%]">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="busStop" className="font-semibold">
@@ -826,7 +826,7 @@ const SellerForm = () => {
               </div>
               <button
                 type="submit"
-                className="hidden md:block p-5 py-3 bg-black text-white font-semibold rounded-xl w-[200px]"
+                className="hidden md:block  h-10 bg-black text-white font-semibold rounded-xl w-[200px] mb-2"
               >
                 Add Post
               </button>
@@ -850,7 +850,7 @@ const SellerForm = () => {
               />
               <button
                 type="submit"
-                className="md:hidden p-5 py-3 bg-black text-white font-semibold rounded-xl w-[200px]"
+                className="md:hidden p-5 py-3 bg-black text-white font-semibold rounded-xl w-[300px]"
               >
                 Add Post
               </button>
@@ -891,7 +891,7 @@ const SellerForm = () => {
                     <button
                       type="button"
                       onClick={() => removePhoto(index)}
-                      className="absolute top-0 right-0 p-1 bg-red-500 text-white rounded-full"
+                      className="absolute top-0 right-0 w-6 h-6 bg-red-500 text-white rounded-full flex justify-center items-start"
                     >
                       &times;
                     </button>

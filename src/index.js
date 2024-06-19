@@ -9,7 +9,7 @@ import Signup from "../src/pages/Signup"
 import Search from "../src/pages/Search"
 import ChatApp from "./pages/ChatApp";
 import PropertyCard from "./components/PropertyCard";
-import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
+// import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
 import Temp from "./pages/Temp";
 const router = createBrowserRouter([
   {

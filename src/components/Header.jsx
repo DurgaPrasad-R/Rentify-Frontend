@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
 <header className={`bg-black p-4 shadow-lg transition-transform duration-700 ${loaded ? 'translate-y-0' : '-translate-y-20'}`}>      
-  <div className="container mx-auto flex justify-between items-center">
+  <div className="mx-auto flex justify-between items-center">
         <div className="text-white text-2xl font-extrabold">MyApp</div>
         <nav className="hidden md:flex space-x-4 items-center">
           <Link to="/" className="flex items-center text-white hover:text-gray-200 transition duration-200 ease-in-out">
